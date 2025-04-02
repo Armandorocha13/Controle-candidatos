@@ -14,8 +14,18 @@ public class candidatura {  // Nome da classe ajustado para iniciar com letra ma
         boolean continuarTentando = true;
         boolean atendeu = false;
         do {
+            atendeu = atender();
+            continuarTentando = !atendeu;
+            if (continuarTentando)
+                tentativasRealizadas++;
+            else
+                System.out.println("CONTATO REALIZADO");
 
         } while (continuarTentando && tentativasRealizadas <3);
+        if (atendeu)
+            System.out.println("CONTATO COM " + candidato + " REALIZADO");
+        else
+            System.out.println("NAO CONSEGUIMOS CONTATO COM " + candidato);
     }
     //metodo auxiliar
     static boolean atender (){
