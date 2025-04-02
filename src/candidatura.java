@@ -1,9 +1,27 @@
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class candidatura {  // Nome da classe ajustado para iniciar com letra maiúscula
     public static void main(String[] args) {
-        selecaoCandidatos();
+        String[] candidatos = {"MONICA", "FABRICIO", "MIRELA", "DANIELA", "JORGE"};
+        for(String canditado: candidatos){
+            entrandoEmContato(canditado);
+        }
     }
+
+    static  void entrandoEmContato(String candidato){
+        int tentativasRealizadas = 1;
+        boolean continuarTentando = true;
+        boolean atendeu = false;
+        do {
+
+        } while (continuarTentando && tentativasRealizadas <3);
+    }
+    //metodo auxiliar
+    static boolean atender (){
+        return new Random().nextInt(3)==1;
+    }
+
 
     static void imprimirSelecionados() {
         String[] candidatos = {"MONICA", "FABRICIO", "MIRELA", "DANIELA", "JORGE"};
