@@ -42,6 +42,15 @@ public class candidatura {  // Nome da classe ajustado para iniciar com letra ma
         }
     }
 
+    static void imprimirSelecionados() {
+        String[] candidatos = {"MONICA", "FABRICIO", "MIRELA", "DANIELA", "JORGE"};
+        System.out.println("Imprimindo os candidatos selecionados, informando o índice do elemento:");
+
+        for (int indice = 0; indice < candidatos.length; indice++) {
+            System.out.println("O candidato de número: " + (indice + 1) + " é o " + candidatos[indice]);
+        }
+    }
+
     static void selecaoCandidatos() {
         String[] candidatos = {"FELIPE", "MARCIA", "JULIA", "PAULO", "AUGUSTO", "MONICA", "FABRICIO", "MIRELA", "DANIELA", "JORGE"};
 
